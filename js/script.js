@@ -31,7 +31,7 @@ function closeEviInfo(){
 
 function showEviVideo(v){
 	eviVideoPopup.classList.toggle("active");
-	var videoName = "video" + v + ".mp4";
+	var videoName = "videos/video" + v + ".mp4";
 	console.log(videoName);
 	eviVideo.setAttribute("src", videoName);
 	eviVideo.play();

@@ -121,7 +121,7 @@
 }
 
 body.board{
-	background-image: url("bulletin.png");
+	background-image: url("images/bulletin.png");
 }
 
 .evidence-container{
@@ -175,4 +175,54 @@ body.board{
 	text-align: center;
 }
 
+/*-----Solve screen CSS-----*/
+body.board{
+	background-image: url("images/bulletin.png");
+}
+
+.drag-events{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	margin: 10px;
+}
+
+.here{
+	color: white;
+	transition: 0.5s;
+}
+.here:hover{
+	text-shadow: 2px 2px #c62d1f;
+}
+
+.drag-container{
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	/*align-content: center;*/
+	align-items: center;
+	margin-bottom: 5vmin;
+}
+
+.drag-item{
+	display: inline-block;
+	height: 100%;
+	margin: 5vmin;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.drag-item img{
+	max-height: 80%;
+	max-width: 20vw;
+	cursor: pointer;
+}
+
+.solve-sub{
+	text-align: center;
+	font-size: 3vh;
+	color: white;
+	font-family: "Courier Prime";
+	text-shadow: 2px 2px #c62d1f;
+}
 

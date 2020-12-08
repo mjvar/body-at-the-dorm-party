@@ -10,7 +10,7 @@ function preload(){
 	for(let i = 1; i <= 28; i++){
 		armImages[i] = loadImage("frames/" + i + ".png");
 	}
-	tapeImage = loadImage("tape.png");
+	tapeImage = loadImage("images/tape.png");
 }
 
 function setup(){
