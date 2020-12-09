@@ -6,6 +6,17 @@ let eviInfoPopup = document.querySelector(".popup.evi-info");
 let eviVideoPopup = document.querySelector(".popup.evi-video");
 let eviVideo = document.querySelector(".popup.evi-video video");
 
+let wrongPopup = document.querySelector(".popup.wrong-ans");
+
+let winPopup = document.querySelector(".popup.win-video");
+
+// Functions to transport user to diff. pages
+// when certain videos end
+introVideo.onended = function(){
+	window.location.replace("table.html");
+}
+
+// Functions to open and close popups
 function openIntro(){
 	introPopup.classList.toggle("active");
 	introVideo.play();
@@ -17,10 +28,6 @@ function closeIntro(){
 	introVideo.currentTime = 0;
 }
 
-introVideo.onended = function(){
-	window.location.replace("table.html");
-}
-
 function openEviInfo(){
 	eviInfoPopup.classList.toggle("active");
 }
@@ -29,6 +36,7 @@ function closeEviInfo(){
 	eviInfoPopup.classList.toggle("active");
 }
 
+// Inject new video into popup depending on which image is clicked
 function showEviVideo(v){
 	eviVideoPopup.classList.toggle("active");
 	var videoName = "videos/video" + v + ".mp4";
@@ -42,3 +50,29 @@ function closeEviVideo(){
 	eviVideo.pause();
 	eviVideo.currentTime = 0;
 }
+
+// Check if answer is correct
+function checkAnswer(){
+	var order = $(".drag-col").sortable("toArray");
+	var choice = $(".ui-selected").attr("id");
+
+	if(order.indexOf("ice") > order.indexOf("soy") || choice=="theater"){
+		correct();
+	}
+	else{
+		incorrect();
+	}
+}
+
+// Show incorrect answer popup
+function incorrect(){
+	wrongPopup.classList.toggle("active");
+}
+
+// Play final video
+function correct(){
+	winPopup.classList.toggle("active");
+	winVideo.play();
+	console.log(winVideo);
+}
+
