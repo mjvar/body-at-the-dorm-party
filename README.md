@@ -1,7 +1,8 @@
 # The Body at the Dorm Party
 
-There's been a murder at the dorm party, and Detective Amina is on the case. Interview the colorful cast of characters and review evidence to figure out who did it!
+[LIVE PROJECT LINK](https://mjvar.github.io/body-at-the-dorm-party/)
 
+There's been a murder at the dorm party, and Detective Amina is on the case. Interview the colorful cast of characters and review the evidence to figure out who did it!
 
 ### Matthew's documentation
 
@@ -13,4 +14,6 @@ I also worked on a lot of the (janky) art assets for the webpage, including the 
 
 One thing I'm proud of is that I am finally reaching a level where I'm fairly confident in my understanding of HTML and CSS. For the first few projects I felt like I was just flailing around until things worked, but now I can actually say I understand most of what I'm doing. I'm relying a lot less on online tutorials (although they're still a great resource). I remember wondering at the start of the semester why we weren't supposed to use Bootstrap since I felt it would have made things easier. Now I understand why! 
 
-The JS for this project was pretty simple. Popups are a big part of how this experience is navigated, 
+The JS for this project was pretty simple. Popups are a big part of how this experience is navigated, so I implemented those using Javascript state switches. I also came up with a clean way to load different evidence videos for each popup, by directly altering the src attribute of the video instead of having to have 6 separate popups in the HTML.
+
+Looking back, I don't think I would have done much differently (although I still cringe at myself every time I see myself in a video). I think this is probably one of the most cohesive projects I've worked on so far. 
