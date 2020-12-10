@@ -209,7 +209,7 @@ body.board{
 	text-align: center;
 }
 
-.solve-pic img{
+img.solve-pic{
 	max-height: 60%;
 }
 

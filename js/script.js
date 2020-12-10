@@ -56,7 +56,7 @@ function checkAnswer(){
 	var order = $(".drag-col").sortable("toArray");
 	var choice = $(".ui-selected").attr("id");
 
-	if(order.indexOf("ice") > order.indexOf("soy") || choice=="theater"){
+	if(order.indexOf("ice") > order.indexOf("soy") && choice=="theater"){
 		correct();
 	}
 	else{

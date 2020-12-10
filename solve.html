@@ -27,15 +27,15 @@
 			</div>
 			<div class="solve-col drag-col">
 				<h2 class="solve-sub">Order the Events</h2>
-				<div class="solve-pic draggable" id="ice">
-					<img src="images/icecream.png">
-				</div>
-				<div class="solve-pic draggable" id="soy">
-					<img src="images/bottle.png">
-				</div>
-				<div class="solve-pic draggable" id="red">
-					<img src="images/fish.png">
-				</div>
+				<!-- <div class="solve-pic draggable" id="ice"> -->
+					<img class="solve-pic draggable" id="ice" src="images/icecream.png">
+				<!-- </div> -->
+				<!-- <div class="solve-pic draggable" id="soy"> -->
+					<img class="solve-pic draggable" id="soy" src="images/bottle.png">
+				<!-- </div> -->
+				<!-- <div class="solve-pic draggable" id="red"> -->
+					<img class="solve-pic draggable" id="red" src="images/fish.png">
+				<!-- </div> -->
 			</div>
 			<div class="solve-col button-col">
 				<a href="#" class="button solve" onclick="checkAnswer();">SOLVE!</a>
@@ -84,7 +84,8 @@
 			$(".drag-col").sortable({
 				opacity: 0.5,
 				cursor: "grabbing",
-				tolerance: "pointer"
+				tolerance: "pointer",
+				items: ":not(.solve-sub)"
 			});
 			$(".select-col").selectable();
 		</script>
